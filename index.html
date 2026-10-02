@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>புனித அந்தோனியார் ஆலயம், ஏஆர் மங்களம் | St. Antony's Church, AR Mangalam</title>
+  <meta name="description" content="புனித அந்தோனியார் திருத்தலம், ஏஆர் மங்களம் பங்கு இணையதளம். திருப்பலி நேரங்கள், நவநாள் ஜெபம், பங்கு நிகழ்வுகள் மற்றும் கிளைக் கிராமங்கள் விபரம்.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Spiritual Background Overlay -->
+  <div class="body-bg-overlay"></div>
+
+  <!-- Sticky Fixed Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <!-- Prominent Circular Emblem Logo using Image 3.jpeg -->
+        <div class="nav-logo-circle">
+          <img src="./assets/3.jpeg" alt="புனித அந்தோனியார் ஆலயம்">
+        </div>
+        <div class="nav-brand-text">
+          <span class="nav-title">புனித அந்தோனியார் ஆலயம்</span>
+          <span class="nav-subtitle">ஏஆர் மங்களம்</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">முகப்பு</a></li>
+        <li><a href="#history" class="nav-link">ஆலய வரலாறு & தந்தைகள்</a></li>
+        <li><a href="#schedule" class="nav-link">திருப்பலி நேரங்கள்</a></li>
+        <li><a href="#branches" class="nav-link">கிளை ஆலயங்கள்</a></li>
+        <li><a href="#events" class="nav-link">ஈவென்ட்கள் & கேலரி</a></li>
+        <li><a href="#videos" class="nav-link">வீடியோக்கள்</a></li>
+        <li><a href="#prayer" class="nav-link">ஜெப விண்ணப்பம்</a></li>
+        <li><a href="#contact" class="nav-link">தொடர்புக்கு</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-gold btn-sm" id="adminLoginBtn" onclick="openAdminModal()">
+          <i class="fa-solid fa-lock"></i> அட்மின் லாகின்
+        </button>
+        <button class="mobile-toggle" id="mobileToggleBtn" aria-label="Menu Toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Hero Section (Clearance Guarantee: 130px spacing ensures header is never obscured) -->
+  <section class="hero-section" id="home">
+    <div class="hero-header-box">
+      <h1 class="hero-title">புனித அந்தோனியார் ஆலயம்<br><span class="gold-text">ஏஆர் மங்களம்</span></h1>
+      <p class="hero-desc" id="heroWelcomeDesc">
+        ஏ.ஆர். மங்களம் கிராமத்தில் ஆன்மீக ஒளியாய் விளங்கும் அருள்மிகு புனித அந்தோனியார் திருத்தலத்திற்கு உங்களை அன்போடு வரவேற்கிறோம்.
+      </p>
+
+      <!-- TV Style Announcement Marquee Ticker below Main Title -->
+      <div class="ticker-box" id="heroAnnouncementTicker">
+        <div class="ticker-label">
+          <i class="fa-solid fa-bullhorn"></i> அட்மின் அறிவிப்பு:
+        </div>
+        <div class="ticker-content-wrap">
+          <div class="ticker-marquee-text" id="heroMarqueeText">
+            புனித அந்தோனியார் ஆலயத்தில் வாரத்தின் எல்லா ஞாயிறும் திருப்பலி காலை 8:30 மணிக்கு சிறப்பு கூட்டு திருப்பலியுடன் ஆரம்பமாகிறது!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Smooth Horizontal Hero Photo Slider (Primary Slides without Omission) -->
+    <div class="slider-container" id="heroSlider">
+      <div class="slider-wrapper" id="sliderWrapper">
+        <!-- Slide 1: Daylight White Church Building (1.jpeg) -->
+        <div class="slide">
+          <img src="./assets/1.jpeg" alt="பகல் நேரத்து கோயில்" class="slide-img">
+          <div class="slide-caption">
+            <span class="slide-badge"><i class="fa-solid fa-sun"></i> பகல் காட்சி</span>
+            <h3 class="slide-title">பகல் நேரத்து வெள்ளை நிறக் கோயில் கட்டடத் தோற்றம்</h3>
+          </div>
+        </div>
+        <!-- Slide 2: People Praying Behind Flag Pole (slider_praying.jpg / 5.jpeg) -->
+        <div class="slide">
+          <img src="./assets/slider_praying.jpg" alt="மக்கள் கொடிமரத்திற்குப் பின்னால் ஜெபம்" class="slide-img">
+          <div class="slide-caption">
+            <span class="slide-badge"><i class="fa-solid fa-hands-praying"></i> கொடிமரம் முன் ஜெபம்</span>
+            <h3 class="slide-title">மக்கள் கொடிமரத்திற்குப் பின்னால் தரையில் அமர்ந்து ஜெபம் செய்யும் புனித காட்சி</h3>
+          </div>
+        </div>
+        <!-- Slide 3: Church Illumination Festival Night (10.jpeg) -->
+        <div class="slide">
+          <img src="./assets/10.jpeg" alt="இரவு நேர வண்ண விளக்கு அலங்காரம்" class="slide-img">
+          <div class="slide-caption">
+            <span class="slide-badge"><i class="fa-solid fa-moon"></i> இரவு மின் அலங்காரம்</span>
+            <h3 class="slide-title">திருவிழா இரவு நேரத்தில் வண்ண விளக்கு அலங்காரத்துடன் ஒளிரும் கோயில் தோற்றம்</h3>
+          </div>
+        </div>
+        <!-- Slide 4: Holy Monstrance / நற்கருணை வேளை (11.jpeg) -->
+        <div class="slide">
+          <img src="./assets/11.jpeg" alt="நற்கருணை வேளை" class="slide-img">
+          <div class="slide-caption">
+            <span class="slide-badge"><i class="fa-solid fa-cross"></i> அருள்மிகு நற்கருணை வேளை</span>
+            <h3 class="slide-title">புனித அந்தோனியார் ஆலயத் தங்க நற்கருணை பீடம் (Holy Monstrance)</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Arrows -->
+      <button class="slider-arrow prev" onclick="prevSlide()" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="slider-arrow next" onclick="nextSlide()" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+
+      <!-- Slider Dots / Indicators -->
+      <div class="slider-dots" id="sliderDots">
+        <span class="slider-dot active" onclick="goToSlide(0)"></span>
+        <span class="slider-dot" onclick="goToSlide(1)"></span>
+        <span class="slider-dot" onclick="goToSlide(2)"></span>
+        <span class="slider-dot" onclick="goToSlide(3)"></span>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 20px;">
+      <a href="#schedule" class="btn btn-gold">
+        <i class="fa-solid fa-clock"></i> திருப்பலி நேரங்கள்
+      </a>
+      <a href="#prayer" class="btn btn-outline" style="margin-left: 12px;">
+        <i class="fa-solid fa-hands-praying"></i> ஜெப விண்ணப்பம்
+      </a>
+      <button class="btn btn-outline" style="margin-left: 12px;" onclick="openNovenaModal()">
+        <i class="fa-solid fa-book-bible"></i> நவநாள் ஜெபம்
+      </button>
+    </div>
+  </section>
+
+  <!-- Quick Info Bar -->
+  <div class="quick-stats-bar">
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fa-solid fa-church"></i></div>
+      <div class="stat-info">
+        <h4>ஞாயிறு திருப்பலி</h4>
+        <p id="quickSunTime">காலை 8:30 மணிக்கு</p>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+      <div class="stat-info">
+        <h4>செவ்வாய் சிறப்பு வழிபாடு</h4>
+        <p id="quickTueTime">இரவு 6:30 மணிக்கு (நவநாள்)</p>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fa-solid fa-hands-praying"></i></div>
+      <div class="stat-info">
+        <h4>வியாழன் வழிபாடு</h4>
+        <p id="quickThuTime">இரவு 6:30 மணிக்கு</p>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fa-solid fa-user-tie"></i></div>
+      <div class="stat-info">
+        <h4>பங்குத் தந்தை</h4>
+        <p id="quickPriestName">அருட்தந்தை ஆரோக்கியராஜ்</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- History & Priests Information Section -->
+  <section class="section" id="history">
+    <div class="section-header">
+      <span class="section-subtitle">ஆன்மீகப் பாரம்பரியம் & பங்குத் தந்தைகள்</span>
+      <h2 class="section-title gold-border-bottom">ஆலய வரலாறு & பங்கு தந்தைகள்</h2>
+    </div>
+    
+    <div class="history-grid">
+      <div class="history-text">
+        <div class="history-quote">
+          "கேளுங்கள் உங்களுக்குக் கொடுக்கப்படும்; தேடுங்கள் நீங்கள் கண்டடைவீர்கள்; தட்டுங்கள் உங்களுக்குத் திறக்கப்படும்."
+        </div>
+        <p id="historyMainContent">
+          ஏ.ஆர். மங்களம் கிராமத்தில் ஆங்கிலேயர் காலத்திற்குப் பிறகு ஆரம்பிக்கப்பட்ட ஒரு சிறிய ஆலயம், இன்று இப்பகுதி மக்களின் நம்பிக்கையின் அடையாளமாகவும், வேண்டியதை நிறைவேற்றும் அருள்மிகு புனித அந்தோனியார் திருத்தலமாகவும் விஸ்வரூபம் எடுத்துள்ளது.
+        </p>
+
+        <!-- Narpatine Heritage Tradition Mention -->
+        <div class="heritage-box">
+          <i class="fa-solid fa-crown heritage-icon"></i>
+          <div class="heritage-text">
+            <h4>நார்பர்ட்டைன் சபை பாரம்பரியம் (Norbertine Ministry)</h4>
+            <p>
+              ஏ.ஆர். மங்களம் பங்குத் திருத்தலமானது வரலாற்று சிறப்புமிக்க 'நார்பர்ட்டைன் சபை' ஆன்மீகப் பாரம்பரியத்தைச் சார்ந்த அருள்மிகு திருத்தலமாகும். இத்திருத்தலத்தில் புனித அந்தோனியாரின் அற்புதத் திருவுருவச் சொரூபமும், அருள்மிகு நற்கருணை பீடமும் பக்தர்களுக்கு ஆசீர்வாதமாகத் திகழ்கிறது.
+            </p>
+          </div>
+        </div>
+
+        <!-- Priests Details Showcase Grid -->
+        <h3 style="color: var(--primary-gold); margin-top: 30px; margin-bottom: 16px;">ஆலயப் பங்குத் தந்தைகள் விவரம் (Parish Priests)</h3>
+        <div class="priests-grid">
+          <!-- Current Priest: Fr. Arockiaraj -->
+          <div class="priest-card">
+            <img src="./assets/4.jpeg" alt="அருட்தந்தை ஆரோக்கியராஜ்" class="priest-avatar">
+            <div class="priest-info">
+              <h4>அருட்தந்தை ஆரோக்கியராஜ்</h4>
+              <span class="priest-title"><i class="fa-solid fa-user-check"></i> தற்போதைய பங்குத்தந்தை</span>
+              <p class="priest-desc">பங்கு மக்களின் ஆன்மீக வளர்ச்சிக்கும் ஆலயப் பணிகளுக்கும் வழிகாட்டும் தற்போதைய பங்குத் தந்தை.</p>
+            </div>
+          </div>
+
+          <!-- Builder Priest: Fr. Anbarasu -->
+          <div class="priest-card">
+            <img src="./assets/9.jpeg" alt="அருட்தந்தை அன்பரசு" class="priest-avatar">
+            <div class="priest-info">
+              <h4>அருட்தந்தை அன்பரசு</h4>
+              <span class="priest-title"><i class="fa-solid fa-place-of-worship"></i> ஆலயம் கட்டிய முன்னாள் பங்குத்தந்தை (உதவியவர்)</span>
+              <p class="priest-desc">ஏ.ஆர். மங்களம் புதிய அழகிய தேவாலயத்தைக் கட்டி ஆன்மீக விஸ்வரூபம் பெற அரும்பணியாற்றியவர்.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 24px; text-align: center;">
+          <button class="btn btn-outline btn-sm" onclick="openNovenaModal()">
+            <i class="fa-solid fa-scroll"></i> புனித அந்தோனியார் நவநாள் ஜெபம்
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule & Mass Timings Section -->
+  <section class="section" id="schedule">
+    <div class="section-header">
+      <span class="section-subtitle">இறை வழிபாடு & திருப்பலிகள்</span>
+      <h2 class="section-title gold-border-bottom">திருப்பலி நேரங்கள்</h2>
+    </div>
+
+    <div class="schedule-container" id="scheduleCardsContainer">
+      <!-- Generated by JS -->
+    </div>
+  </section>
+
+  <!-- Branch Villages Section -->
+  <section class="section" id="branches">
+    <div class="section-header">
+      <span class="section-subtitle">பங்கு எல்லைகள்</span>
+      <h2 class="section-title gold-border-bottom">கிளைக் கிராமங்கள் & பாதுகாவலர் புனிதர்கள்</h2>
+    </div>
+
+    <div class="branches-grid" id="branchesContainer">
+      <!-- Generated by JS -->
+    </div>
+  </section>
+
+  <!-- Church Events & Photo Gallery Section -->
+  <section class="section" id="events">
+    <div class="section-header">
+      <span class="section-subtitle">கிறிஸ்துமஸ், ஈஸ்டர், கும்மியாட்டம் & திருவிழா நிகழ்வுகள்</span>
+      <h2 class="section-title gold-border-bottom">தேவாலய நிகழ்வுகள் & கேலரி</h2>
+    </div>
+
+    <!-- Featured Events Grid (High Quality Cards) -->
+    <div class="gallery-grid" id="featuredGalleryGrid">
+      <!-- JS Dynamic Content -->
+    </div>
+
+    <!-- View All Button -->
+    <div class="gallery-view-more-box">
+      <button class="btn btn-gold" onclick="openFullGalleryModal()">
+        <i class="fa-solid fa-images"></i> அனைத்து ஈவென்ட் போட்டோக்களையும் காண்க (View All Gallery)
+      </button>
+    </div>
+  </section>
+
+  <!-- Daily Verse Widget -->
+  <section class="section" style="padding-top: 10px; padding-bottom: 20px;">
+    <div class="daily-verse-card">
+      <i class="fa-solid fa-quote-left verse-quote-icon"></i>
+      <p class="verse-text" id="dailyVerseText">"நான் உங்களுக்குக் கட்டளையிட்டது போல, நீங்கள் ஒருவர் மற்றவரிடம் அன்பு செலுத்துங்கள்."</p>
+      <span class="verse-ref" id="dailyVerseRef">- யோவான் 15:12</span>
+    </div>
+  </section>
+
+  <!-- YouTube Video Integration Section -->
+  <section class="section" id="videos">
+    <div class="section-header">
+      <span class="section-subtitle">நேரலை & ஆன்மீகப் பாடல்கள்</span>
+      <h2 class="section-title gold-border-bottom">யூடியூப் வீடியோக்கள்</h2>
+    </div>
+
+    <div class="videos-grid" id="videosGrid">
+      <!-- Generated by JS -->
+    </div>
+  </section>
+
+  <!-- Prayer Request Form Section & Direct Contact -->
+  <section class="section" id="prayer">
+    <div class="section-header">
+      <span class="section-subtitle">ஆன்மீக மன்றாட்டு</span>
+      <h2 class="section-title gold-border-bottom">ஜெப விண்ணப்பம் அளியுங்கள்</h2>
+    </div>
+
+    <div class="prayer-section-box">
+      <!-- Direct Contact Info Banner -->
+      <div class="official-address-card">
+        <h4 style="color: var(--primary-gold); margin-bottom: 12px; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
+          <i class="fa-solid fa-paper-plane"></i> விண்ணப்பங்கள் நேரடித் தொடர்பு
+        </h4>
+        <p style="font-size: 0.9rem; color: var(--text-sub); line-height: 1.6;">
+          நீங்கள் இங்கு சமர்ப்பிக்கும் விண்ணப்பங்கள் மற்றும் மன்றாட்டுகள் நேரடியாக பங்குத் தளத்தின் அதிகாரப்பூர்வ மின்னஞ்சல் 
+          <strong style="color: var(--text-gold);">raj85piyo@gmail.com</strong> மற்றும் வாட்ஸ்அப் எண் 
+          <strong style="color: var(--text-gold);">+91 6382183062</strong> மூலமாகப் பெறப்படும்.
+        </p>
+      </div>
+
+      <form id="prayerRequestForm">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+          <div class="form-group">
+            <label class="form-label" for="prayerName"><i class="fa-solid fa-user"></i> உங்கள் பெயர்</label>
+            <input type="text" id="prayerName" class="form-control" placeholder="எ.கா. மரிய அந்தோணி" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="prayerPhone"><i class="fa-solid fa-phone"></i> தொலைபேசி / வாட்ஸ்அப்</label>
+            <input type="tel" id="prayerPhone" class="form-control" placeholder="6382183062" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="prayerIntent"><i class="fa-solid fa-pen"></i> உங்கள் ஜெபத் தேவை / மன்றாட்டு விபரம்</label>
+          <textarea id="prayerIntent" class="form-control" placeholder="உடல் சுகம், குடும்ப அமைதி, தேர்வு வெற்றி, தொழில் மேன்மை போன்ற உங்கள் தேவைகளைக் குறிப்பிடவும்..." required></textarea>
+        </div>
+
+        <div class="prayer-actions-grid">
+          <button type="button" class="btn btn-gold" onclick="sendPrayerEmail()" style="justify-content: center; font-size: 0.95rem; padding: 14px;">
+            <i class="fa-solid fa-envelope"></i> மின்னஞ்சல் மூலம் அனுப்புக
+          </button>
+          <button type="button" class="btn btn-whatsapp" onclick="sendPrayerWhatsApp()" style="justify-content: center; font-size: 0.95rem; padding: 14px;">
+            <i class="fa-brands fa-whatsapp"></i> வாட்ஸ்அப் மூலம் அனுப்புக
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Official Address & Contact Details Footer Section -->
+  <footer class="footer" id="contact">
+    <div class="footer-grid">
+      <!-- Col 1: Church Info -->
+      <div class="footer-col">
+        <h4 style="display: flex; align-items: center; gap: 10px;">
+          <div class="nav-logo-circle" style="width: 36px; height: 36px;">
+            <img src="./assets/3.jpeg" alt="Logo">
+          </div>
+          புனித அந்தோனியார் ஆலயம்
+        </h4>
+        <p style="font-size: 0.9rem; line-height: 1.7; color: var(--text-sub);">
+          ஏ.ஆர். மங்களம் கிராம மக்களின் ஆன்மீக வாழ்வின் உறைவிடமாக விளங்கும் அருள்மிகு புனித அந்தோனியார் பங்குத் திருத்தலம்.
+        </p>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4>விரைவு இணைப்புகள்</h4>
+        <ul class="footer-links">
+          <li><a href="#history"><i class="fa-solid fa-angle-right"></i> ஆலய வரலாறு & தந்தைகள்</a></li>
+          <li><a href="#schedule"><i class="fa-solid fa-angle-right"></i> திருப்பலி நேரங்கள்</a></li>
+          <li><a href="#branches"><i class="fa-solid fa-angle-right"></i> கிளை ஆலயங்கள்</a></li>
+          <li><a href="#events"><i class="fa-solid fa-angle-right"></i> ஈவென்ட்கள் & கேலரி</a></li>
+          <li><a href="#videos"><i class="fa-solid fa-angle-right"></i> வீடியோக்கள்</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Official Church Address -->
+      <div class="footer-col">
+        <h4>அதிகாரப்பூர்வ ஆலய முகவரி</h4>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot contact-icon"></i>
+          <div>
+            <strong style="color: var(--text-gold); font-size: 1rem;">புனித அந்தோனியார் ஆலயம்</strong><br>
+            ஏஆர் மங்களம் பங்கு,<br>
+            சிவகங்கை மறை மாவட்டம்,<br>
+            ஆர்எஸ் மங்களம் தாலுக்கா,<br>
+            ராமநாதபுரம் மாவட்டம்,<br>
+            தமிழ்நாடு, இந்தியா - 623538.
+          </div>
+        </div>
+      </div>
+
+      <!-- Col 4: Contact Numbers & Email -->
+      <div class="footer-col">
+        <h4>தொடர்பு விவரங்கள்</h4>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone contact-icon"></i>
+          <div>
+            <strong>தொலைபேசி எண்ணிற்கு அழைக்க:</strong><br>
+            <a href="tel:6382183062" style="color: var(--primary-gold); font-weight: 700; text-decoration: none;">+91 6382183062</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-brands fa-whatsapp contact-icon" style="color: #25d366;"></i>
+          <div>
+            <strong>வாட்ஸ்அப் செய்தி அனுப்ப:</strong><br>
+            <a href="https://wa.me/916382183062" target="_blank" style="color: #25d366; font-weight: 700; text-decoration: none;">+91 6382183062</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope contact-icon"></i>
+          <div>
+            <strong>மின்னஞ்சல் முகவரி:</strong><br>
+            <a href="mailto:raj85piyo@gmail.com" style="color: var(--primary-gold); font-weight: 700; text-decoration: none; word-break: break-all;">raj85piyo@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 புனித அந்தோனியார் ஆலயம், ஏஆர் மங்களம் பங்கு, சிவகங்கை மறை மாவட்டம். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+    </div>
+  </footer>
+
+  <!-- Admin Floating Bar -->
+  <div class="admin-bar" id="adminFloatingBar" style="display: none;">
+    <div class="admin-pill">
+      <span class="admin-status-dot"></span>
+      <span style="font-size: 0.85rem; color: #fff; font-weight: 600;">அட்மின் உள்நுழைந்துள்ளார்</span>
+      <button class="btn btn-gold btn-sm" onclick="openAdminCMSPanel()">
+        <i class="fa-solid fa-sliders"></i> மேலாண்மைப் பலகை (CMS)
+      </button>
+      <button class="btn btn-outline btn-sm" onclick="logoutAdmin()" title="வெளியேறு">
+        <i class="fa-solid fa-right-from-bracket"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Admin Login Modal -->
+  <div class="modal-overlay" id="adminLoginModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeAdminModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <i class="fa-solid fa-shield-halved" style="font-size: 2.2rem; color: var(--primary-gold); margin-bottom: 10px;"></i>
+        <h3>அட்மின் உள்நுழைவு</h3>
+        <p style="font-size: 0.85rem; color: var(--text-sub);">ஆலய மேலாண்மை மற்றும் உள்ளடக்க மாற்றங்களுக்கு லாகின் செய்யவும்</p>
+      </div>
+
+      <form id="adminLoginForm">
+        <div class="form-group">
+          <label class="form-label"><i class="fa-solid fa-envelope"></i> மின்னஞ்சல் முகவரி</label>
+          <input type="email" id="adminEmail" class="form-control" placeholder="raj" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><i class="fa-solid fa-key"></i> கடவுச்சொல்</label>
+          <input type="password" id="adminPassword" class="form-control" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="btn btn-gold" style="width: 100%; justify-content: center;">
+          <i class="fa-solid fa-right-to-bracket"></i> உள்நுழைக
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin CMS Dashboard Modal -->
+  <div class="modal-overlay" id="adminCMSModal">
+    <div class="modal-content" style="max-width: 780px;">
+      <button class="modal-close" onclick="closeAdminCMSPanel()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-pen-to-square" style="color: var(--primary-gold);"></i> ஆலய நிர்வாகப் பலகை (CMS)</h3>
+        <p style="font-size: 0.85rem; color: var(--text-sub);">ஸ்லைடர், செய்திகள் ஓடும் பகுதி, ஈவென்ட்கள், திருப்பலி நேரங்களை மாற்றலாம்</p>
+      </div>
+
+      <!-- CMS Tabs -->
+      <div class="admin-tabs">
+        <button class="admin-tab-btn active" onclick="switchAdminTab('announcementTab')"><i class="fa-solid fa-bullhorn"></i> ஓடும் செய்திகள்</button>
+        <button class="admin-tab-btn" onclick="switchAdminTab('scheduleTab')"><i class="fa-solid fa-clock"></i> திருப்பலி நேரங்கள்</button>
+        <button class="admin-tab-btn" onclick="switchAdminTab('galleryTab')"><i class="fa-solid fa-image"></i> ஈவென்ட் போட்டோக்கள்</button>
+        <button class="admin-tab-btn" onclick="switchAdminTab('videoTab')"><i class="fa-solid fa-video"></i> யூடியூப் வீடியோ</button>
+        <button class="admin-tab-btn" onclick="switchAdminTab('infoTab')"><i class="fa-solid fa-church"></i> ஆலயத் தகவல்</button>
+      </div>
+
+      <!-- Tab 1: Announcement Editor -->
+      <div class="admin-tab-content active" id="announcementTab">
+        <form id="cmsAnnouncementForm">
+          <div class="form-group">
+            <label class="form-label">முகப்பு ஓடும் செய்தி வாசகம் (Marquee Announcement Text)</label>
+            <textarea id="cmsAnnouncementInput" class="form-control" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold"><i class="fa-solid fa-floppy-disk"></i> புதிய செய்தியை சேமி</button>
+        </form>
+      </div>
+
+      <!-- Tab 2: Mass Schedule Editor -->
+      <div class="admin-tab-content" id="scheduleTab">
+        <form id="cmsScheduleForm">
+          <div class="form-group">
+            <label class="form-label">ஞாயிறு திருப்பலி நேரம்</label>
+            <input type="text" id="cmsSunTime" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">செவ்வாய்க்கிழமை சிறப்பு வழிபாடு நேரம்</label>
+            <input type="text" id="cmsTueTime" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">வியாழக்கிழமை சிறப்பு வழிபாடு நேரம்</label>
+            <input type="text" id="cmsThuTime" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-gold"><i class="fa-solid fa-floppy-disk"></i> நேரங்களைச் சேமி</button>
+        </form>
+      </div>
+
+      <!-- Tab 3: Event Photo Gallery Manager -->
+      <div class="admin-tab-content" id="galleryTab">
+        <form id="cmsGalleryForm" style="margin-bottom: 24px;">
+          <h4 style="color: var(--primary-gold); margin-bottom: 12px;">புதிய ஈவென்ட் போட்டோ சேர்க்க</h4>
+          <div class="form-group">
+            <label class="form-label">நிகழ்வுத் தலைப்பு</label>
+            <input type="text" id="cmsGalleryTitle" class="form-control" placeholder="எ.கா. கும்மியாட்டம் கொண்டாட்டம்" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">பிரிவு (Category)</label>
+            <select id="cmsGalleryCat" class="form-control">
+              <option value="cultural">கும்மி நடனம் & கலைநிகழ்ச்சி</option>
+              <option value="christmas">கிறிஸ்துமஸ் / ஈஸ்டர்</option>
+              <option value="festival">வருடாந்திர திருவிழா</option>
+              <option value="novena">செவ்வாய் நவநாள்</option>
+              <option value="parish">பங்கு நிகழ்வுகள்</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">புகைப்பட URL அல்லது Local File (எ.கா. ./assets/1.jpeg - 11.jpeg)</label>
+            <input type="text" id="cmsGalleryUrl" class="form-control" placeholder="./assets/1.jpeg அல்லது https://..." required>
+          </div>
+          <button type="submit" class="btn btn-gold"><i class="fa-solid fa-plus"></i> புகைப்படத்தைப் பதிவேற்று</button>
+        </form>
+
+        <h4 style="color: var(--text-gold); margin-bottom: 10px;">தற்போதைய ஈவென்ட் படங்கள்</h4>
+        <div id="cmsGalleryList" style="display: flex; flex-direction: column; gap: 8px; max-height: 200px; overflow-y: auto;">
+          <!-- Managed by JS -->
+        </div>
+      </div>
+
+      <!-- Tab 4: YouTube Video Manager -->
+      <div class="admin-tab-content" id="videoTab">
+        <form id="cmsVideoForm">
+          <h4 style="color: var(--primary-gold); margin-bottom: 12px;">புதிய யூடியூப் வீடியோ சேர்க்க</h4>
+          <div class="form-group">
+            <label class="form-label">வீடியோ தலைப்பு</label>
+            <input type="text" id="cmsVideoTitle" class="form-control" placeholder="எ.கா. புனித அந்தோனியார் பெருவிழா நேரலை" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">யூடியூப் வீடியோ Embed URL / Link</label>
+            <input type="text" id="cmsVideoUrl" class="form-control" placeholder="https://www.youtube.com/embed/... அல்லது https://youtu.be/..." required>
+          </div>
+          <button type="submit" class="btn btn-gold"><i class="fa-solid fa-video"></i> வீடியோவைச் சேர்</button>
+        </form>
+
+        <h4 style="color: var(--text-gold); margin-top: 20px; margin-bottom: 10px;">தற்போதைய வீடியோக்கள்</h4>
+        <div id="cmsVideoList" style="display: flex; flex-direction: column; gap: 8px; max-height: 180px; overflow-y: auto;">
+          <!-- Managed by JS -->
+        </div>
+      </div>
+
+      <!-- Tab 5: Parish Info & History Editor -->
+      <div class="admin-tab-content" id="infoTab">
+        <form id="cmsInfoForm">
+          <div class="form-group">
+            <label class="form-label">தற்போதைய பங்குத் தந்தை பெயர்</label>
+            <input type="text" id="cmsPriestName" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">ஆலய வரலாற்றுச் சுருக்கம் (தற்காலிக வரலாறு)</label>
+            <textarea id="cmsHistoryInput" class="form-control" rows="4" required></textarea>
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <button type="submit" class="btn btn-gold"><i class="fa-solid fa-floppy-disk"></i> தகவல்களைச் சேமி</button>
+            <button type="button" class="btn btn-outline" onclick="resetDefaults()"><i class="fa-solid fa-rotate-left"></i> இயல்புநிலை அமைப்புகள்</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Full Gallery View Modal -->
+  <div class="modal-overlay" id="fullGalleryModal">
+    <div class="modal-content" style="max-width: 1200px; padding: 30px;">
+      <button class="modal-close" onclick="closeFullGalleryModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <i class="fa-solid fa-images" style="font-size: 2.2rem; color: var(--primary-gold); margin-bottom: 8px;"></i>
+        <h3 class="gold-text">தேவாலய நிகழ்வுகள் & முழு கேலரி (All Photos 1-11)</h3>
+        <p style="font-size: 0.85rem; color: var(--text-sub);">கிறிஸ்துமஸ், ஈஸ்டர், கும்மியாட்டம், கொடிமரம் ஜெபம் மற்றும் திருவிழாக்களின் அனைத்து புகைப்படங்கள்</p>
+      </div>
+
+      <!-- Category Filter Buttons -->
+      <div class="gallery-filters" style="margin-bottom: 24px;">
+        <button class="filter-btn active" onclick="filterModalGallery('all', this)">அனைத்தும்</button>
+        <button class="filter-btn" onclick="filterModalGallery('cultural', this)">கும்மியாட்டம் & கலைநிகழ்ச்சி</button>
+        <button class="filter-btn" onclick="filterModalGallery('christmas', this)">கிறிஸ்துமஸ் / ஈஸ்டர்</button>
+        <button class="filter-btn" onclick="filterModalGallery('festival', this)">திருவிழாக்கள்</button>
+        <button class="filter-btn" onclick="filterModalGallery('novena', this)">நவநாள் & நற்கருணை</button>
+        <button class="filter-btn" onclick="filterModalGallery('parish', this)">பங்கு நிகழ்வுகள்</button>
+      </div>
+
+      <!-- Full Gallery Grid (Spacious Card Layout) -->
+      <div class="gallery-grid" id="modalGalleryGrid" style="max-height: 65vh; overflow-y: auto; padding-right: 10px;">
+        <!-- JS Managed -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Novena Prayer Modal -->
+  <div class="modal-overlay" id="novenaModal">
+    <div class="modal-content" style="max-width: 650px;">
+      <button class="modal-close" onclick="closeNovenaModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <i class="fa-solid fa-cross" style="font-size: 2rem; color: var(--primary-gold); margin-bottom: 8px;"></i>
+        <h3 class="gold-text">புனித அந்தோனியார் நவநாள் ஜெபம்</h3>
+      </div>
+      <div style="font-size: 0.95rem; line-height: 1.8; color: var(--text-sub); max-height: 60vh; overflow-y: auto; padding-right: 10px;">
+        <p><strong>தொடக்க ஜெபம்:</strong></p>
+        <p>புதுமைகளின் பிதாவே, புனித அந்தோனியாரே! ஆண்டவர் இயேசுவின் திருப்பாதத்தில் அமர்ந்து எமக்காக இடைவிடாது பரிந்துபேசும் அன்பின் வழிகாட்டியே, உம்மிடம் நாங்கள் ஒப்படைக்கும் எங்கள் ஜெப விண்ணப்பங்களை ஏற்றுக்கொண்டருளும்.</p>
+        <br>
+        <p><strong>பரிந்துரை ஜெபம்:</strong></p>
+        <p>துன்புறுவோரின் ஆறுதலே, இழந்தவைகளைக் கண்டடையச் செய்யும் புனிதரே! ஏ.ஆர். மங்களம் கிராமத்தையும், இத்திருத்தலத்திற்கு வருகை தரும் அனைத்து விசுவாசிகளையும் உமது அருட்பார்வையால் காத்தருளும். எங்கள் குடும்பங்களில் சமாதானத்தையும், நோயாளிகளுக்கு சுகத்தையும், வறியவருக்கு உமது உதவியையும் தந்தருள வேண்டுமென்று உம்மிடம் வேண்டுகிறோம்.</p>
+        <br>
+        <p><i>(மனதில் உங்களது தனிப்பட்ட ஜெபத் தேவைகளை நினைத்து அமைதியாக வேண்டிக்கொள்ளுங்கள்...)</i></p>
+        <br>
+        <p>1 பரலோகத்தில் இருக்கிற எங்கள் தந்தையே... | 1 அருள் நிறைந்த மரியாயே... | 1 பிதாவுக்கும் சுதனுக்கும்...</p>
+        <br>
+        <p><strong>முடிவு ஜெபம்:</strong> புனித அந்தோனியாரே, எமக்காக வேண்டிக்கொள்ளும். ஆமென்.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Photo Lightbox Modal -->
+  <div class="modal-overlay" id="lightboxModal" onclick="closeLightbox()">
+    <div class="modal-content" style="background: transparent; border: none; box-shadow: none; text-align: center; max-width: 950px;" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
+      <img id="lightboxImg" src="" alt="Zoomed view" style="max-width: 100%; max-height: 80vh; border-radius: var(--radius-md); border: 2px solid var(--primary-gold); box-shadow: 0 0 35px rgba(0,0,0,0.95);">
+      <h4 id="lightboxTitle" style="color: var(--primary-gold); margin-top: 16px; font-size: 1.25rem;"></h4>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- JavaScript App Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
